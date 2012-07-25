@@ -1,0 +1,419 @@
+@font-face {
+	font-family: "MainFont";
+	src: url('sp://sons-of-rock/img/fonts/floyd-webfont.svg') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "MainFont";
+	font-size: 21px;
+	color: #333333;
+        margin:  0px;
+        padding: 0px;
+}
+
+#main_canvas.concert_background {
+	width: 1024px;
+	height: 768px;
+}
+
+#main_canvas.main_menu {
+	background-image: url('sp://sons-of-rock/img/stage/main_background.jpg');
+        background-repeat: no-repeat;
+	width: 1024px;
+	height: 768px;
+}
+
+.menu {
+	color: #cccccc;
+	position: absolute;
+	left: 450px;
+	top: 40px;
+}
+
+.menu .title {
+	font-size: 38px;
+}
+
+.menu .user_info {
+	padding-top: 15px;
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.menu .option {
+	margin-left: 25px;
+	margin-top: 25px;
+	font-size: 25px;
+}
+
+.menu .option a {
+	color: #aaaaaa;
+	text-decoration: none;
+}
+
+.menu .option a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.popup_overlay {
+	background: #000000;
+	z-index: 9999999;
+	top: 0px;
+	left: 0px;
+	opacity: 0.8;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.popup {
+	z-index: 99999999;
+	position:absolute;
+	border-radius: 10px;
+	background-color: #eeeeee;
+}
+
+.user-info-form {
+	padding-top: 20px;
+	width: 350px;
+	padding-left: 25px;
+}
+
+.user-info-form .field-name {
+	color: #555555;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+.user-info-form .field-name input{
+	border-radius: 10px;
+	width: 220px;
+	font-size: 16px;
+	float: right;
+	font-family: "MainFont";
+}
+
+.user-info-form .field-submit {
+	padding-top: 10px;
+	text-align: right;
+}
+
+.user-info-form .field-submit input{
+	border-radius: 20px;
+	background-color: #ffffff;
+	width: 80px;
+	font-size: 16px;
+	font-family: "MainFont";
+}
+
+.play_list {
+	top: 20px;
+	left: 20px;
+	position: absolute;
+	width: 380px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+.play_list .title {
+	padding-left: 20px;
+	padding-top: 20px;
+	font-size: 38px;
+}
+
+.song_resume {
+	font-family: Verdana;
+	background-color: #cccccc;
+	opacity: 1;
+	margin-top: 10px;
+	margin-left: 15px;
+	padding: 10px;
+	width: 330px;
+	height: 35px;
+	border-radius: 10px;
+}
+
+.song_resume:hover {
+	background-color: #aaaaaa;
+	cursor: pointer;
+}
+
+.song_resume .title {
+	padding: 0px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.song_resume .artist {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.track_info {
+	top: 160px;
+	left: 430px;
+	position: absolute;
+	width: 360px;
+	height: 300px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+.track_info .title {
+	padding-left: 20px;
+	padding-top: 20px;
+	font-size: 25px;
+}
+
+.track_info_content .album_cover {
+	padding-left: 20px;
+	width: 120px;
+	height: 120px;
+}
+
+.track_info_content .album_info {
+	font-family: Verdana;
+	font-size: 12px;
+	padding-left: 10px;
+	float: right;
+	width: 200px;
+	text-align: left;
+}
+
+.track_info_content .track_title {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 17px;
+	padding-left: 20px;
+	padding-top: 10px;
+	width: 330px;
+	text-align: left;
+}
+
+.track_info_content .track_info_text {
+	font-family: Verdana;
+	font-size: 12px;
+	padding-left: 160px;
+	width: 330px;
+	text-align: left;
+}
+
+.advertise_list {
+	text-align: center;
+	padding-top: 10px;
+	top: 480px;
+	left: 430px;
+	position: absolute;
+	width: 360px;
+	height: 250px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	opacity: 0.9;
+}
+
+.top_light {
+	position: absolute;
+	background-image: url('sp://sons-of-rock/img/stage/lights_l.png');
+        background-repeat: no-repeat;
+	z-index: 100;
+	width: 241px;
+	height: 135px;
+}
+
+.top_light.right {
+	background-image: url('sp://sons-of-rock/img/stage/lights_r.png');
+}
+
+.top_light_light {
+	position: absolute;
+	z-index: 150;
+	background-image: url('sp://sons-of-rock/img/stage/lights_light.png');
+        background-repeat: no-repeat;
+	width: 161px;
+	height: 142px;
+}
+
+.hd {
+	display: none;
+}
+
+.audience {
+	position: absolute;
+	background-image: url('sp://sons-of-rock/img/stage/audience1.png');
+        background-repeat: no-repeat;
+	width: 278px;
+	height: 248px;
+}
+
+.guitar_neck {
+	position: absolute;
+        background-repeat: no-repeat;
+	width: 300px;
+	height: 550px;
+}
+
+.frets {
+	z-index: 150;
+	position: absolute;
+	background-image: url('sp://sons-of-rock/img/guitar/frets.png');
+        background-repeat: no-repeat;
+	width: 70px;
+	height: 53px;
+}
+
+.frets.fret_0 {
+	background-position: 0px -8px;
+}
+
+.frets.fret_1 {
+	background-position: -70px -8px;
+}
+
+.frets.fret_2 {
+	background-position: -140px -8px;
+}
+
+.frets.fret_3 {
+	background-position: -210px -8px;
+}
+
+.frets.fret_4 {
+	background-position: -280px -8px;
+}
+
+.frets.fret_0.pressed {
+	background-position: 0px -87px;
+}
+
+.frets.fret_1.pressed {
+	background-position: -70px -87px;
+}
+
+.frets.fret_2.pressed {
+	background-position: -140px -87px;
+}
+
+.frets.fret_3.pressed {
+	background-position: -210px -87px;
+}
+
+.frets.fret_4.pressed {
+	background-position: -280px -87px;
+}
+
+.rope {
+	z-index: 100;
+	width: 5px;
+	position: absolute;
+}
+
+.rope.color_0 {
+	height: 524px;
+	background-color: #3c8e36;
+	-webkit-transform: rotate(9deg);
+}
+
+.rope.color_1 {
+	height: 523px;
+	background-color: #682125;
+	-webkit-transform: rotate(5.4deg);
+}
+
+.rope.color_2 {
+	height: 520px;
+	background-color: #727322;
+	-webkit-transform: rotate(0deg);
+}
+
+.rope.color_3 {
+	height: 523px;
+	background-color: #2f3587;
+	-webkit-transform: rotate(-5.4deg);
+}
+
+.rope.color_4 {
+	height: 524px;
+	background-color: #734924;
+	-webkit-transform: rotate(-9deg);
+}
+
+.note {
+	z-index: 200;
+	position: absolute;
+}
+
+.note_fire {
+	position: absolute;
+	z-index: 99999;
+	background-image: url('sp://sons-of-rock/img/guitar/notes/note_fire.png');
+        background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+.rockmeter {
+	position: absolute;
+	z-index: 99999;
+        background-repeat: no-repeat;
+	width: 130px;
+	height: 116px;
+	top: 300px;
+	left: 80px;
+}
+
+.rockmeter.low {
+	background-image: url('sp://sons-of-rock/img/rockmeter/low.png');
+}
+
+.rockmeter.med {
+	background-image: url('sp://sons-of-rock/img/rockmeter/med.png');
+}
+
+.rockmeter.hi {
+	background-image: url('sp://sons-of-rock/img/rockmeter/hi.png');
+}
+
+.scoreboard {
+	font-size: 14px;
+	padding-top: 7px;
+	padding-left: 7px;
+	top: 410px;
+	left: 65px;
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	z-index: 99999;
+	border-radius: 10px;
+	background-color: #eeeeee;
+}
+
+.game_end {
+	text-align: center;
+	padding: 10px;
+}
+
+.star {
+        background-repeat: no-repeat;
+	float: left;
+	width: 25px;
+	height: 25px;
+}
+
+.star.no_selected {
+	background-image: url('sp://sons-of-rock/img/stars/base.png');
+}
+
+.star.selected {
+	background-image: url('sp://sons-of-rock/img/stars/gold.png');
+}
+
+.stars_box {
+	padding-left: 20px;
+	padding-right: 40px;
+}

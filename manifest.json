@@ -1,0 +1,21 @@
+{
+	"AppDescription": {
+		"en": "\"Sons of Rock\" is a music player simulator"
+	},
+	"AppIcon": {
+		"18x18": "img/logos/logo_18x18.png",
+		"128x128": "img/logos/logo_64x64.png",
+		"128x128": "img/logos/logo_128x128.png"
+	},
+	"AppName": {
+		"en": "Sons of Rock"
+	 },
+	"BundleIdentifier": "sons-of-rock",
+	"BundleType": "Application",
+	"BundleVersion": "0.1",
+	"RequiredInterface": 1,
+	"SupportedLanguages": [
+		"en"
+	],
+	"VendorIdentifier": "Tras2 Desarrollos"
+}

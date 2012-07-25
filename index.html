@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- stylesheets -->
+		<style>
+			@import url('sp://sons-of-rock/css/styles.css');
+		</style>
+
+		<!-- javascript - The next lines should be minified -->
+		<script src="sp://sons-of-rock/js/config.js"></script>
+		<script src="sp://sons-of-rock/js/tools/sf_api.js"></script>
+		<script src="sp://sons-of-rock/js/tools/pop_up.js"></script>
+		<script src="sp://sons-of-rock/songs/songs_index.js "></script>
+		<script src="sp://sons-of-rock/js/tools/sor_tools.js"></script>
+		<script src="sp://sons-of-rock/js/tools/ultra_div.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/rockmeter.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/guitar.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/audience.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/scoreboard.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/top_light.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/concert.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/songs_list.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/session_controller.js"></script>
+		<script src="sp://sons-of-rock/js/controllers/main_menu.js"></script>
+		<script src="sp://sons-of-rock/js/sons_of_rock.js"></script>
+	</head>
+	<body>
+		<div id="main_canvas">
+		</div>
+		<script>
+			window.onload = function() {
+				SonsOfRock.bootstrap();
+			};
+		</script>
+	</body>
+</html>
