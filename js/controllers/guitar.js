@@ -90,7 +90,7 @@ var Guitar = (function(inSongId, inScoreBoard) {
 
 	var playSong = function(inSongId) {
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', "sp://sons-of-rock/songs/" + inSongId + ".json", false);
+		xhr.open('GET', "songs/" + inSongId + ".json", false);
 
 		xhr.addEventListener('load', function(e) {
 			var maxFret = 0;
@@ -127,7 +127,7 @@ var Guitar = (function(inSongId, inScoreBoard) {
 			y: config.guitar.topPos});
 		//var neckBackground = config.guitar.necks[Math.floor((Math.random() * 100) % config.guitar.necks.length)];
 		var neckBackground = config.guitar.necks[0];
-		guitarNeck.addStyle('background-image', "url('sp://sons-of-rock/img/guitar/necks/" +  neckBackground + "')");
+		guitarNeck.addStyle('background-image', "url('img/guitar/necks/" +  neckBackground + "')");
 
 		mainDiv.appendChild(guitarNeck.getEl());
 	};

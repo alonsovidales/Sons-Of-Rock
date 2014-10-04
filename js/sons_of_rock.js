@@ -3,9 +3,9 @@ var SonsOfRock = (function() {
 		bootstrap: function() {
 			SfApi.bootstrap();
 
-			/*var mainMenu = new MainMenu();
-			mainMenu.bootstrap();*/
-			new Concert('7yvmRjwBhncESjVWn8Es7w');
+			var mainMenu = new MainMenu();
+			mainMenu.bootstrap();
+			//new Concert('7yvmRjwBhncESjVWn8Es7w');
 		}
 	};
 })();
